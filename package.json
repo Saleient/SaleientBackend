@@ -1,0 +1,30 @@
+{
+  "name": "saleientbackend",
+  "version": "1.0.0",
+  "description": "Saleient backend that manages all the request coming from backend\\",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build":"tsc -b",
+    "dev":"tsc -b && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saleient/SaleientBackend.git"
+  },
+  "keywords": [
+    "Saleient"
+  ],
+  "author": "Ram Krishna Yadav",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Saleient/SaleientBackend/issues"
+  },
+  "homepage": "https://github.com/Saleient/SaleientBackend#readme",
+  "dependencies": {
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^5.0.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
