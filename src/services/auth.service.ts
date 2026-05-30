@@ -1,15 +1,14 @@
 import { auth } from "../lib/auth.js";
-import { asyncHandler } from "../utils/asyncHandler.js";
 
 export const authService={
     async sendVerificationOtp (email:string) {
-        await auth.api.sendVerificationEmail({
-            body:{email},
+        await auth.api.sendVerificationOTP({
+            body:{ email, type: "sign-in" },
         })
     },
-    async verifyLogin(email:string,password:string){
-        const result=await auth.api.signInEmail({
-            body:{email,password}
+    async verifyLogin(email:string,otp:string){
+        const result=await auth.api.signInEmailOTP({
+            body:{ email, otp }
         })
         return result
     }
