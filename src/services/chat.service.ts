@@ -1,4 +1,6 @@
 export const chatService={
+    async createNewChat(id:string){
+    },
 
 }
 
