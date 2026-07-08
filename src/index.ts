@@ -5,6 +5,7 @@ import { errorHandler } from "./middlewares/errorHandler.js";
 import { auth } from "./lib/auth.js";
 import cors from "cors"
 import { toNodeHandler } from "better-auth/node";
+
 const app=express();
 
 app.use(express.json())

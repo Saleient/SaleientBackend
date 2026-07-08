@@ -31,7 +31,6 @@ export const chatController = {
       throw createError.badRequest("Email not Found for user");
     }
     const {message} = req.body;
-    const newChat=await createC
   }),
 };
 export default chatController;
